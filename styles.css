@@ -14,3 +14,10 @@ body {
   min-height: 100vh;
   background:linear-gradient(#f3f3fb 50%, #377dff);
 }
+
+.wrapper {
+  width: 420px;
+  border-radius: 7px;
+  background: #377dff;
+  padding: 30px 30px 35px;
+}

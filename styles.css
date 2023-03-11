@@ -16,6 +16,7 @@ body {
 }
 
 .wrapper {
+  height: 270px;
   width: 420px;
   border-radius: 7px;
   background: #377dff;
@@ -33,11 +34,12 @@ body {
 }
 
 form img {
+  display: none;
   max-width: 148px;
 }
 
 form .content {
-  display: none;
+  /* display: none; */
 }
 
 form .content i {

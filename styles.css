@@ -39,3 +39,8 @@ form img {
 form .content {
   display: none;
 }
+
+form .content i {
+  color: #377dff;
+  font-size: 55px;
+}

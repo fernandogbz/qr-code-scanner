@@ -72,3 +72,16 @@ form .content p {
   margin-top: 20px;
   justify-content: space-between;
 }
+
+.buttons button {
+  height: 55px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0b85ff;
+  background-color: #fff;
+  border-radius: 5px;
+  width: calc(100% / 2 - 10px);
+}

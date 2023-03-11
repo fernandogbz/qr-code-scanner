@@ -33,5 +33,9 @@ body {
 }
 
 form img {
+  max-width: 148px;
+}
+
+form .content {
   display: none;
 }

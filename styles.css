@@ -44,3 +44,9 @@ form .content i {
   color: #377dff;
   font-size: 55px;
 }
+
+form .content p {
+  color: #377dff;
+  font-size: 16px;
+  margin-top: 15px;
+}

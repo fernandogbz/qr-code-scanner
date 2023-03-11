@@ -54,7 +54,9 @@ form .content p {
 }
 
 .wrapper .details {
+  opacity: 0;
   margin-top: 25px;
+  pointer-events: none;
 }
 
 .details textarea {

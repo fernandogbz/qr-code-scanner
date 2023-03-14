@@ -3,8 +3,8 @@ form = wrapper.querySelector("form");
 fileInp = form.querySelector("input");
 
 fileInp.addEventListener("change", e => {
-  // Getting user selected file
-  let file = e.target.files[0];
+  let file = e.target.files[0]; // Getting user selected file
+  let formData = new FormData(); // Creating a new FormData object
   console.log(file);
 });
 

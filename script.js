@@ -3,10 +3,13 @@ form = wrapper.querySelector("form");
 fileInp = form.querySelector("input");
 
 function fetchRequest(formData) {
+  // Sending post request to qr server api with passing
+  // form data as body and getting response from it
   fetch("http://api.qrserver.com/v1/read-qr-code/", {
-    // Sending post request to qr server api with passing
     method:"POST", body: formData
-  })
+  }).then(res => res.json()).then(result => { 
+  console.log(result); 
+  }); 
 }
 
 fileInp.addEventListener("change", e => {

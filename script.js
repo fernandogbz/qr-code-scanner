@@ -18,6 +18,8 @@ function fetchRequest(formData, file) {
     wrapper.querySelector("textarea").innerText = result;
     form.querySelector("img").src = URL.createObjectURL(file);
     wrapper.classList.add("active");
+  }).catch(() => {
+    infoText.innerText = "Couldn't Scan QR Code";
   });
 }
 

@@ -10,9 +10,11 @@ function fetchRequest(formData) {
   fetch("http://api.qrserver.com/v1/read-qr-code/", {
     method:"POST", body: formData
   }).then(res => res.json()).then(result => {
+    result = result[0].symbol[0].data;
+    wrapper.querySelector("textarea").innerText = result;
+    console.log(result);
     infoText.innerText = "Upload QR Code to Scan";
     wrapper.classList.add("active");
-  console.log(result); 
   }); 
 }
 

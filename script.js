@@ -1,7 +1,8 @@
 const wrapper = document.querySelector(".wrapper");
 form = wrapper.querySelector("form");
 fileInp = form.querySelector("input");
-infoText = form.querySelector("p");
+infoText = form.querySelector("p"),
+copyBtn = wrapper.querySelector(".copy");
 
 function fetchRequest(formData, file) {
   infoText.innerText = "Scanning QR Code...";
@@ -24,5 +25,10 @@ fileInp.addEventListener("change", e => {
   formData.append("file", file); // Adding selected file to formData
   fetchRequest(formData, file);
 });
+
+copyBtn.addEventListener("click", () => {
+  let text = wrapper.querySelector("textarea").textContent;
+  navigator.clipboard.writeText(text);
+})
 
 form.addEventListener("click", () => fileInp.click());

@@ -21,6 +21,11 @@ body {
   border-radius: 7px;
   background: #377dff;
   padding: 30px 30px 35px;
+  transition: height 0.2s ease;
+}
+
+.wrapper.active {
+  height: 525px;
 }
 
 .wrapper form {
@@ -32,6 +37,12 @@ body {
   border-radius: 7px;
   align-items: center;
   justify-content: center;
+  transition: height 0.2s ease;
+}
+
+.wrapper.active form {
+  height: 225px;
+  pointer-events: none;
 }
 
 form img {
@@ -39,8 +50,12 @@ form img {
   max-width: 148px;
 }
 
-form .content {
-  /* display: none; */
+.wrapper.active form img {
+  display: block;
+}
+
+.wrapper.active form .content {
+  display: none;
 }
 
 form .content i {

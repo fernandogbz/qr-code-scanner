@@ -22,6 +22,7 @@ function fetchRequest(formData, file) {
 
 fileInp.addEventListener("change", e => {
   let file = e.target.files[0]; // Getting user selected file
+  if(!file) return;
   let formData = new FormData(); // Creating a new FormData object
   formData.append("file", file); // Adding selected file to formData
   fetchRequest(formData, file);

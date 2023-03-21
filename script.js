@@ -1,7 +1,8 @@
-const wrapper = document.querySelector(".wrapper");
-form = wrapper.querySelector("form");
-fileInp = form.querySelector("input");
+const wrapper = document.querySelector(".wrapper"),
+form = wrapper.querySelector("form"),
+fileInp = form.querySelector("input"),
 infoText = form.querySelector("p"),
+closeBtn = wrapper.querySelector(".close"),
 copyBtn = wrapper.querySelector(".copy");
 
 function fetchRequest(formData, file) {
@@ -32,3 +33,4 @@ copyBtn.addEventListener("click", () => {
 })
 
 form.addEventListener("click", () => fileInp.click());
+closeBtn.addEventListener("click", () => wrapper.classList.remove("active"));
